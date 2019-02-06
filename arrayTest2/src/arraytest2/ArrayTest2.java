@@ -6,8 +6,21 @@ public class ArrayTest2 {
     public static void main(String[] args)
     {
         
-       System.out.println("The sum of the digits in number 125 is " +sumDigits(5));
-        
+       System.out.println("The sum of the digits in number 125 is " +sumDigits(125));
+      
+       
+     int [] x= {5, 6, 1, 2};
+     int sum1=0;
+     
+     for (int index = 0; index<x.length; index++)
+     {
+     System.out.println(x[index]);
+     }
+     for (int index=0; index<x.length; index++)
+     {
+     sum1=x[index]+sum1;
+     }
+     System.out.println("The sume is = "+sum1);
     }
     
     public static int sumDigits(int number)
@@ -15,9 +28,8 @@ public class ArrayTest2 {
         if(number<10){
         return -1;
         }
-        int sum=0;
-         
-    while (number>0){
+        int sum=0;  
+        while (number>0){
         // extract the least significat digit
         int digit = number%10;
         sum= digit+sum;

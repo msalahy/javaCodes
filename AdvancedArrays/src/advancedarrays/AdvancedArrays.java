@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 
 public class AdvancedArrays {
+
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -12,7 +13,6 @@ public class AdvancedArrays {
         for(int i=0; i<myIntegers.length; i++) {
             System.out.println("Element " + i +", typed value was " + myIntegers[i]);
         }
-        
         System.out.println("The average is " + getAverage(myIntegers));
 
     }
@@ -27,16 +27,18 @@ public class AdvancedArrays {
 
         return values;
     }
-    public static double getAverage(int[] array){
-        
-        int sum=0;
-        for(int i=0; i<array.length; i++){
-            sum+=array[i];
+
+    public static double getAverage(int[] array) {
+        int sum = 0;
+        for(int i=0; i< array.length; i++) {
+            sum += array[i];
         }
-        return (double) sum/ (double) array.length;
-        
+
+        return (double) sum / (double)array.length;
+
     }
 }
+
         
 //        
 //        int[] myIntArray = new int [25];
