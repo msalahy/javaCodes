@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Player implements ISaveable {
+public class Player extends NewClass implements ISaveable  {
     private String name;
     private int hitPoints;
     private int strength;
@@ -77,6 +77,11 @@ public class Player implements ISaveable {
             this.strength=Integer.parseInt(savedValues.get(2));
             this.weapon = savedValues.get(3);
         }
+    }
+
+    @Override
+    public double getArea() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
